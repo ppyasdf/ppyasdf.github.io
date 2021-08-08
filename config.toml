@@ -1,7 +1,7 @@
-baseURL = "https://ppyasdf.github.io/"
+baseURL = "https://www.cstarroofing.com/"
 languageCode = "en-us"
 title = "C-Star Roofing"
-#theme = "hugo-initio"
+
 
 
 [params]
