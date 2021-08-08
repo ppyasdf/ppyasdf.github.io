@@ -1,0 +1,488 @@
+html, body 
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+body
+{
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #20333D;
+	background-color:#3D3F4E;
+}
+
+#wrapper
+{
+	width: 760px;
+	text-align: left;
+	margin: 0 auto;        
+	background-color:#FFFFFF;
+}
+
+/* -- Page division -- */
+#head
+{
+	height: 207px;
+	width: 760px;
+	background-color: #494D4B;
+	background-image:url(images/header.jpg);
+}
+
+#text-us {
+	left:125px; 
+	top:130px; 
+	color: #210d81;
+    font-weight: bold;
+}
+#text-reply {
+	left: 260px;
+    top: 164px; 
+	color: #5d5d5f;
+}
+
+#topmenu
+{
+	float: left;
+	width: 760px;
+	background-color: #D3C350;
+}
+
+#estimate, #aboutus, #home, #contacts, #services, #testimonials, #gallery
+{
+	float: left;
+	background-color: #FFFFFF;
+	width: 760px;
+	padding: 5px 0px 10px 0px;
+}
+
+#foot
+{    
+
+	width: 760px;
+	float: left;
+	height: 200px;
+	background-image: url(images/footer.jpg);
+	background-repeat: repeat-x;
+   	background-color:#3D3F4E;
+	padding: 0px 0px 5px 0px;
+	margin-bottom:-10px;
+}	
+
+/*-- topmenu -- */
+
+#topmenu ul
+{
+    padding: 0px 10px 0px 55px;
+	margin: 5px 0px 5px 0px;
+}
+
+#topmenu ul li
+{
+	display: inline;
+	float: left;
+	padding: 0px 20px 10px 10px;
+}
+
+#topmenu ul li a
+{
+	color: #312C20;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#topmenu ul li a:hover
+{
+	color: #5C2810;
+	text-decoration: none;
+	background-color: transparent;
+} 
+
+p
+{
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0px 20px 0px 25px;
+}
+
+#homeintro
+{
+	float: left;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0px 20px 0px 5px;
+	width:370px;
+}
+
+#homeetc
+{
+	float:left;
+	width: 350px;
+}
+
+.homecontact
+{
+	float:left;
+	width:300px;
+	padding: 0px 0px 3px 0px;
+	#background: url(images/homecall.jpg)
+}
+
+.homegallery
+{
+	float:left;
+	width:300px;
+	padding: 0px 0px 0px 0px;
+}
+
+.homegalleryintro
+{
+	float:left;
+	width: 70px;
+	padding-top: 40px;
+}
+
+.homegallerypic
+{
+	float:left;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.homegallerypic img
+{
+	padding: 0px;
+	border: 0px;
+}
+
+
+h1,h2,h3,h4
+{
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	padding-left: 25px;
+	color: #925512;
+}
+
+h1 {font-size: 34px;}
+h2 {font-size: 30px;}
+h3 {font-size: 26px;}
+h4 {font-size: 20px; 
+	padding-top: 25px;
+	padding-bottom: 25px;} 
+
+a
+{
+	color: #993300;
+	text-decoration: underline;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
+/* -- images -- */
+img.float-right
+{
+	float: right;
+	padding: 20px;
+}
+
+#float-right-img
+{
+	float: right;
+	padding: 0px 20px 10px 10px;
+}
+
+#index-gallary-imgs
+{
+	float: left;
+	padding: 10px 10px 10px 10px;
+}
+
+
+.index-gallary-img-single
+{
+	padding: 0px 3px 0px 3px;
+}
+
+.free-estimate
+{
+	border:none;
+}
+
+
+/*-- footer -- */
+#footerHr
+{
+	float: left;
+	width: 500px;
+	height: 2px;
+	padding: 10px 80px 10px 80px;
+	background-color:#666666;
+}
+
+#footerArea1
+{
+	float: left;
+	width: 25%;
+	height: 180px;
+	border-right: solid 1px #FF9900;
+}
+#footerArea1 h1
+{
+	font-size: 16px;
+	font-family: "Trebuchet MS", Helvetica, Arial, sans-serif;
+	color:#333333;
+}
+
+#footerArea1 p
+{
+	font-size: 12px;
+}
+
+#footerArea2 
+{
+	float: left;
+	vertical-align:bottom;
+	width: 20%;
+	height: 180px;
+}
+
+#footerArea2 p
+{
+	font-size: 12px;
+}
+
+/*-- estimate form -- */
+
+#estimateLeftside
+{
+	float: left;
+	width: 460px;
+}
+
+#estimateRightside
+{
+	float: left;
+	width: 250px;
+}
+
+#msg
+{
+	float: left;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	color: #FF0000;
+}
+
+p.formTitle
+{
+	font-size: 22px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-top: 5px;
+	padding-left: 100px;
+}
+
+p.formRequiredField
+{
+	color: #666666;
+	padding-left: 130px;
+}
+
+
+label.estimate
+{
+	width: 180px;
+	float: left;
+	text-align: left;
+	margin-right: 5px;
+	display: block;
+}
+
+input.estimate
+{
+	width: 140px;
+	margin: 0;
+	border: 1px solid #9C9C9C;
+	font-size: 12px;
+}
+
+select.estimate
+{
+	width: 100px;
+	margin: 0;
+	border: 1px solid #9C9C9C;
+	font-size: 11px;
+}	
+
+textarea.estimate
+{
+	width: 200px;
+	margin: 0;
+	border: 1px solid #9C9C9C;
+	font-size: 11px;
+}
+
+#estimateContact
+{
+	background-color:#FDF4B9;
+	width: 220px;
+	margin: 20px 0px 20px 0px;
+	padding: 5px 0px 20px 0px;	
+	border: solid 1px #666666;
+}
+
+#estimateContact p
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #993300;
+}
+
+/*-- services --*/
+.serviceTitle
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #666666;
+}
+
+/*-- testimonials --*/
+.testimonialsSubTitle
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #968825;
+	font-style: italic;
+}
+
+/*-- contact form --*/
+label.contacts
+{
+	width: 120px;
+	float: left;
+	text-align: left;
+	margin-right: 5px;
+	display: block;
+	color:#666666;
+}
+
+input.contacts
+{
+	width: 120px;
+	margin: 0;
+	border: 1px solid #9C9C9C;
+	font-size: 11px;
+}
+
+select.contacts
+{
+	width: 100px;
+	margin: 0;
+	border: 1px solid #9C9C9C;
+	font-size: 11px;
+}	
+
+textarea.contacts
+{
+	width: 200px;
+	margin: 0;
+	border: 1px solid #9C9C9C;
+	font-size: 11px;
+}
+	
+/*-- roofing 10 steps--*/
+.roofingWrap
+{
+	width: 700px;
+	height: 210px;	
+	float: left;
+}
+
+.roofingDesc
+{
+	width: 200px;
+	float: left;
+}
+
+.roofPic
+{
+	width: 420px;
+	height: 200px;
+	margin: 3px 3px 10px 3px;
+	padding-left: 10px;
+	float: left;
+}
+p.roofingTitle
+{
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #666666;
+}
+
+/*-- gallery --*/
+#piclist
+{
+	width: 700px;
+	float: left;
+	padding: 0px 5px 0px 20px;
+}
+
+#piclist img
+{
+	border:0px;
+}
+.picleft
+{
+	float:left;
+	width:200px;
+	padding: 0px 30px 20px 20px;
+}
+
+.picmiddle
+{
+	float: left;
+	width: 200px;
+	padding: 0px 30px 20px 0px;
+}
+
+.picright
+{
+	float:left;
+	width:200px;
+	padding:0px 0px 20px 0px;
+}
+
+/*-- lightbox --*/
+#lightbox{	position: absolute;	left: 0; width: 100%; z-index: 100; text-align: center; line-height: 0;}
+#lightbox img{ width: auto; height: auto;}
+#lightbox a img{ border: none; }
+
+#outerImageContainer{ position: relative; background-color: #fff; width: 250px; height: 250px; margin: 0 auto; }
+#imageContainer{ padding: 10px; }
+
+#loading{ position: absolute; top: 40%; left: 0%; height: 25%; width: 100%; text-align: center; line-height: 0; }
+#hoverNav{ position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: 10; }
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{ width: 49%; height: 100%; background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */ display: block; }
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(images/prevlabel.gif) left 15% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(images/nextlabel.gif) right 15% no-repeat; }
+
+#imageDataContainer{ font: 10px Verdana, Helvetica, sans-serif; background-color: #fff; margin: 0 auto; line-height: 1.4em; overflow: auto; width: 100%	; }
+
+#imageData{	padding:0 10px; color: #666; }
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}			
+#imageData #bottomNavClose{ height: 40px;width: 66px; float: right;  padding-bottom: 0.7em; outline: none;}	 	
+
+#overlay{ position: absolute; top: 0; left: 0; z-index: 90; width: 100%; height: 500px; background-color: #000; }
+

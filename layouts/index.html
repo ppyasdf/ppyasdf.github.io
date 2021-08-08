@@ -1,0 +1,28 @@
+{{define "main"}}
+
+<div id="home">
+    <h4>{{.Params.headline}}</h4>
+    <h4 class="text-danger">{{.Params.specialnote}}</h4>
+    <div id="homeintro">
+        {{.Content}}
+    </div>
+    <div id="homeetc">
+        <div class="homecontact shadow-sm p-1 border border-info rounded bg-light text-center">
+            <h5 class="text-danger font-weight-bold">Need More Information?</h5>
+            <span>Text Us at</span><span class="font-weight-bold"> {{.Site.Params.phone}}</span><br>
+            <span class="font-weight-light font-italic text-muted">We reply all messages!</span>
+            
+        </div>
+        <div class="homegallery">
+            <div class="homegalleryintro"><img src="/images/seeus.jpg" alt="see us in action" />
+            </div><div class="homegallerypic"><a href="/gallery"><img src="/images/gallery.jpg" alt="gallery"/></a></div></div>
+    </div>
+    
+    
+  <!--
+      <div id="homegallery"><h3>Gallery</h3><a href="gallery.php"><img src="images/gallery.jpg" alt="Gallery" /></a> </div>
+  
+  <div id="index-gallary-imgs"><a href="c-star-roofing-hilton.html" class="lbOn"><img src="images/c-star-roofing-hilton.jpg" alt="C-Star Roofing Hilton job" class="index-gallary-img-single" border="0"/></a><a href="c-star-roofing-hilton2.html" class="lbOn"><img src="images/c-star-roofing-hilton2.jpg" alt="C-Star Roofing Hilton job" class="index-gallary-img-single" border="0"/><a href="c-star-roofing-church.html" class="lbOn"><img src="images/c-star-roofing-church.jpg" alt="C-Star Roofing Hilton job" class="index-gallary-img-single" border="0"/></a></div>
+  -->
+  </div>
+  {{end}}

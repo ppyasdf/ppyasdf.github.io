@@ -1,3 +1,10 @@
-baseURL = "http://example.org/"
+baseURL = "https://ppyasdf.github.io/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "C-Star Roofing"
+#theme = "hugo-initio"
+
+
+[params]
+    email = "info@cstarroofing.com"
+    phone = "416-839-2782"
+    address = "450 Comstock Rd Unit 5, Scarborough, ON M1L 2H4"

@@ -1,0 +1,32 @@
+{{define "main"}}
+<div id="contacts">
+  <h4>Contact Information</h4>
+  <p>Thank you for visiting our website!  You can contact us using any of the information provided below.  We are looking forward to hearing from you with your roofing needs, questions, and comments.  Contact us today !!</p>
+  <p><strong>By Text Message:</strong> {{.Site.Params.phone}} (We reply all messages.)</p>
+  <p><strong>By Email:</strong> <a href="mailto:{{.Site.Params.email}}">{{.Site.Params.email}}</a></p>
+  <p><strong>Web:</strong> please fill out the contact form with your questions or comments.<br />			
+  <form name="contact" method = "post" action="https://submit-form.com/Lr5xz59y">
+    <p><label class="contacts" for="name">Name: </label><input class="contacts" type="text" name="name" /></p>
+    <p><label class="contacts" for="address">Address: </label><input class="contacts" name="address" type="text" size="40"  /></p>
+    <p><label class="contacts" for="city">City: </label><input class="contacts" name="city" type="text" /></p>
+    <p><label class="contacts" for="province">Province: </label><input class="contacts" name="province" type="text" /></p>
+    <p><label class="contacts" for="postal">Postal Code: </label><input class="contacts" name="postal" type="text" /></p>
+    <p><label class="contacts" for="phone">Phone: </label><input class="contacts" name="phone" type="text" /></p>
+    <p><label class="contacts" for="email">Email: </label><input class="contacts" name="email" type="text" /></p>
+    <p><label class="contacts" for="hearFromUs">How do you hear of us? </label>
+    <select class="contacts" NAME="hearOfUs">
+              <option value="Choose One" selected>Choose One</option>
+                <option value="Search Engine">Search Engine</option>
+                <option value="Other Web Site">Other Web Site</option>
+                <option value="Advertisement">Advertisement</option>
+      <option value="Word of Mouth">Word of Mouth</option>
+            </select>
+    </p>
+    <br />
+    <p><label class="contacts" for="comments">Questions or Comments:</label><textarea class="contacts" name="comments" rows="6"></textarea>
+    </p>
+    <p><input type="submit" name="submit" value="Submit" />
+  </form>
+  </p>
+</div>
+{{end}}
