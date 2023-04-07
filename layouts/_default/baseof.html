@@ -15,6 +15,26 @@
 
 <body>
 	<div id="wrapper">
+				<!-- Add the modal HTML code -->
+				<div class="modal" tabindex="-1" role="dialog" id="scamWarningModal">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title">Important Notice</h5>
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<p>We recently discovered that scammers were using our company's name and logo. We have never changed our contact. Please always use this phone number: {{.Site.Params.phone}}.</p>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of the modal HTML code -->
 		<div id="head">
 			<div id="text-us" class="position-relative">Text us at:</div>
 			<div id="text-reply" class="position-relative font-italic">100% Response Rate!</div>
@@ -51,5 +71,42 @@
 	<!-- end of wrapper -->
 <script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.bundle.min.js"></script>	
+<!-- Add the JavaScript code -->
+<script type="text/javascript">
+    // Add the JavaScript code for handling cookies and the modal here
+
+	function setCookie(name, value, days) {
+		var expires = "";
+		if (days) {
+		  var date = new Date();
+		  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+		  expires = "; expires=" + date.toUTCString();
+		}
+		document.cookie = name + "=" + (value || "") + expires + "; path=/";
+	  }
+	  
+	  function getCookie(name) {
+		var nameEQ = name + "=";
+		var ca = document.cookie.split(';');
+		for (var i = 0; i < ca.length; i++) {
+		  var c = ca[i];
+		  while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+		  if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+		}
+		return null;
+	  }
+	  
+	  $(document).ready(function() {
+		if (!getCookie('modalShown')) {
+		  $('#scamWarningModal').modal('show');
+		}
+	  });
+	  
+	  $('#scamWarningModal').on('hidden.bs.modal', function () {
+		setCookie('modalShown', 'true', 7); // Set the cookie to expire in 7 days
+	  });
+	  
+  </script>
+  <!-- End of the JavaScript code -->
 </body>
 </html>
