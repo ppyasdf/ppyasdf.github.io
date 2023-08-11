@@ -7,7 +7,7 @@ draft: false
 aliases:
     - /index.php
 ---
-Welcome to the C-Star Roofing website. Years after its development, C-Star Roofing Inc. has become a reputable roofing company. We specialize in **roofing, eavestroughs, soffits** and **vinyl sidings** installation and maintaining, proudly serving both commercial and residential markets.
+Welcome to the C-Star Roofing website. Years after its development, C-Star Roofing Inc. has become a reputable roofing company. We specialize in **Roofing, Eavestroughs, Soffits** and **Vinyl Sidings** installation and maintaining, proudly serving both commercial and residential markets.
 
 We encourage you to browse our site to find out more about C-Star Roofing and our commitment to quality and service.
 
