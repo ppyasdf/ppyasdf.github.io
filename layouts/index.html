@@ -1,7 +1,7 @@
 {{define "main"}}
 
 <div id="home">
-    <h2 class="text-danger">{{.Params.headline}}</h2>
+    <h1 class="text-danger">{{.Params.headline}}</h1>
     {{ if and (isset .Params "specialnote") (ne .Params.specialnote "") }}
         <h4>{{ .Params.specialnote }}</h4>
     {{ end }}
