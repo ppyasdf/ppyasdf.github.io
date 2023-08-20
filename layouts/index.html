@@ -1,8 +1,10 @@
 {{define "main"}}
 
 <div id="home">
-    <h4 class="text-danger">{{.Params.headline}}</h4>
-    <h4>{{.Params.specialnote}}</h4>
+    <h2 class="text-danger">{{.Params.headline}}</h2>
+    {{ if and (isset .Params "specialnote") (ne .Params.specialnote "") }}
+        <h4>{{ .Params.specialnote }}</h4>
+    {{ end }}
     <div id="homeintro">
         {{.Content}}
     </div>
