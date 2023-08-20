@@ -111,41 +111,7 @@
 <script type="text/javascript" src="/bootstrap/js/jquery.js"></script>
 <script type="text/javascript" src="/bootstrap/js/bootstrap.bundle.min.js"></script>	
 <!-- Add the JavaScript code -->
-<script type="text/javascript">
-    // Add the JavaScript code for handling cookies and the modal here
 
-	function setCookie(name, value, days) {
-		var expires = "";
-		if (days) {
-		  var date = new Date();
-		  date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-		  expires = "; expires=" + date.toUTCString();
-		}
-		document.cookie = name + "=" + (value || "") + expires + "; path=/";
-	  }
-	  
-	  function getCookie(name) {
-		var nameEQ = name + "=";
-		var ca = document.cookie.split(';');
-		for (var i = 0; i < ca.length; i++) {
-		  var c = ca[i];
-		  while (c.charAt(0) == ' ') c = c.substring(1, c.length);
-		  if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
-		}
-		return null;
-	  }
-	  
-	  $(document).ready(function() {
-		if (!getCookie('modalShown')) {
-		  $('#scamWarningModal').modal('show');
-		}
-	  });
-	  
-	  $('#scamWarningModal').on('hidden.bs.modal', function () {
-		setCookie('modalShown', 'true', 7); // Set the cookie to expire in 7 days
-	  });
-	  
-  </script>
   <!-- End of the JavaScript code -->
 </body>
 </html>
