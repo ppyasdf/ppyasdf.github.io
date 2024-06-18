@@ -1,3 +1,31 @@
+{{ define "custom_head" }}
+<style>
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .gallery img {
+    max-width: 200px;
+    height: auto;
+  }
+  .flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; /* Ensure the container takes up the full width */
+  padding: 0; /* Remove any padding */
+  margin: 0; /* Remove any margin */
+}
+
+.flex-item {
+  flex: 1 0 20%; /* Decrease the base width to 20% */
+  margin: 5px;
+  box-sizing: border-box;
+}
+</style>
+{{ end }}
+
 {{define "main"}}
 <div id="gallery">
   <h4 class="text-danger">{{.Params.headline}}</h4>
@@ -9,5 +37,19 @@
     <div class="picleft"><a href="/images/c-star-roofing-hilton2-big.jpg" rel="lightbox" title="Job"><img src="/images/c-star-roofing-hilton2-200.jpg" alt="job"/></a></div>
     <div class="picmiddle"><a href="/images/c-star-roofing-hilton-big.jpg" rel="lightbox" title="Job"><img src="/images/c-star-roofing-hilton-200.jpg" alt="job"/></a></div>
     <div class="picright"><a href="/images/c-star-roofing-church-big.jpg" rel="lightbox" title="Job"><img src="/images/c-star-roofing-church-200.jpg" alt="job"/></a></div>		
+
   </div>
+  <div class="gallery flex-container">
+    {{ range (readDir "static/images/gallery") }}
+      {{ if .IsDir }}
+        {{/* Ignore directories */}}
+      {{ else }}
+        <a class="flex-item" href="/images/gallery/{{ .Name }}" data-lightbox="gallery"><img src="/images/gallery/{{ .Name }}" alt="{{ .Name }}"></a>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+
+
+
 {{end}}
