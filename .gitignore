@@ -17,3 +17,4 @@
 
 # Ignore Windows specific files
 Thumbs.db
+.hugo_build.lock
